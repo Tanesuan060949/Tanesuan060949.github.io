@@ -215,7 +215,33 @@
 
     <!-- Sidebar -->
     <aside class="sidebar">
-      <div class="profile-img">👨‍💻</div>
+      <svg width="140" height="140" viewBox="0 0 140 140">
+  <!-- วงเขียวด้านนอก -->
+  <circle
+    cx="70"
+    cy="70"
+    r="68"
+    fill="#2ea043"
+  />
+
+  <!-- กำหนดพื้นที่ตัดเป็นวงกลม -->
+  <defs>
+    <clipPath id="avatarClip">
+      <circle cx="80" cy="70" r="60" />
+    </clipPath>
+  </defs>
+
+  <!-- รูปโปรไฟล์ -->
+  <image
+    href="me.jpg"
+    x="10"
+    y="10"
+    width="120"
+    height="120"
+    clip-path="url(#avatarClip)"
+    preserveAspectRatio="xMidYMid slice"
+  />
+</svg>
       <h2>ธเนศวร แสนโบราณ</h2>
       <div class="role">Full Stack Developer</div>
       <p class="bio">ผมเป็นคน เป็นมนุษย์เหมือนกับทุกคน</p>
@@ -233,7 +259,7 @@
 
       <!-- Digital Resume -->
       <section class="card">
-        <h1>สวัสดี! ผม ธเนศวร 👋</h1>
+        <h1>สวัสดี! ผม นัท 👋</h1>
         <p class="typing" id="typing"></p>
 
         <ul class="tech">
